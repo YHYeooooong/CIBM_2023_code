@@ -27,8 +27,17 @@ Python == 3.8.18
 Pytorch == 1.11.0
 timm == 0.6.5
 ```
+## 3. Training settings
 
-## 3. Dataset and implementation example
+|  Hyperparameter | Value |
+| ------------- | ------------- |
+| Optimizer | AdamW  |
+| Epoch  | 300 |
+| Learning rate  | 0.0001 |
+| Warm up (epoch) | 30 |
+| Batch size  | 64 |
+
+## 4. Dataset and implementation example
 Placed your dataset at ../dataset folder
 
 Training on CBIS-DDSM, with ImageNet-1k models with Avanced augmentation option using cosine scheduler 
@@ -36,10 +45,10 @@ Training on CBIS-DDSM, with ImageNet-1k models with Avanced augmentation option 
 python train.py --model 'ResNet101' --aug 'Advanced' --LR 'w_sch' --iter '1' --num_cls '2' --model_weight '1k'
 ```
 
-## 4. MobileViT models
+## 5. MobileViT models
 We used ml-cvent code for MobileViT-S, MobileViT-XS, and MobileViT-XXS explements  -->
 [ml-cvnet](https://github.com/apple/ml-cvnets/blob/7be93d3debd45c240a058e3f34a9e88d33c07a7d/docs/source/en/models/classification/README-classification-tutorial.md)
 
-## 5. CvT models\
+## 6. CvT models\
 We used CvT pre-trained model weight download from offical repo --> [CvT](https://github.com/microsoft/CvT/tree/f851e681966390779b71380d2600b52360ff4fe1)
 
