@@ -40,4 +40,6 @@ python train.py --model 'ResNet101' --aug 'Advanced' --LR 'w_sch' --iter '1' --n
 We used ml-cvent code for MobileViT-S, MobileViT-XS, and MobileViT-XXS explements  -->
 [ml-cvnet](https://github.com/apple/ml-cvnets/blob/7be93d3debd45c240a058e3f34a9e88d33c07a7d/docs/source/en/models/classification/README-classification-tutorial.md)
 
+## 5. CvT models\
+We used CvT pre-trained model weight download from offical repo --> [CvT](https://github.com/microsoft/CvT/tree/f851e681966390779b71380d2600b52360ff4fe1)
 
