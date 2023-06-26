@@ -9,7 +9,10 @@ def define_model(model_name, num_cls, device) :
 
     model = ''
     if model_name == 'CvT-21' :
-        model = torch.load('../ref_model/whole_CvT-21-384x384-IN-22k_2class.pt')
+        if num_classes = 2
+            model = torch.load('../ref_model/whole_CvT-21-384x384-IN-22k_2class.pt')
+        else : 
+            model = torch.load('../ref_model/whole_CvT-21-384x384-IN-22k_4class.pt')
         clipping = 0.1
 
     elif model_name == 'MLP-Mixer-b16' :
